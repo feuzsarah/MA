@@ -1,0 +1,21 @@
+method: 'noise'              #method of creating negative samples; selection poss = ['mixup','noise','real', ' ']
+
+submethod: ' '              #include real negative samples or not: include = 'real', exclude = ' '
+style: 'mixup_real'                  #style of the method to use for mixup; selection poss. ['mixup','mixup_real'] mixup_real refers to the method of mixing real negative samples and known samples together    
+filter_method: 'threshold'          #filter method; selection poss. for mixup = ['logits',' ']; selection poss. for noise = ['threshold',' ']
+filterthreshold_value: 0.9  #value for the threshold of the filter threshold method in noise
+number_neg_real: 6          #the maximum number of generated negative samples per epoch when including real negative samples 
+
+#noise
+noise: 0.15                 #magnitude parameter noise
+adaptive_noise: True       #include adaptive noise or not; selection possibilities: ['False', 'True']
+
+#mixup
+alpha: 2                    #alpha parameter for beta distribution function                    
+mixlayer: 1                 #mixing layer: selection possibilities : [1,2,3,4,5]
+
+#evaluation parameters
+experiment_number: test     #parameter for the evaluation method (number of the model file created trough threshold)
+evaluate: 'test'            #evaluate on test or val dataset; selection possibilities = ['test','val']
+
+waiting: 0                  #ignore: not used
