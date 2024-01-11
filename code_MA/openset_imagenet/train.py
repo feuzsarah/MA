@@ -600,8 +600,6 @@ def train(model, data_loader, optimizer, loss_fn, trackers, cfg, cfg_ns, waiting
                     #look at the known samples in a batch
                     remaining_size = batch_len - count_real_neg
 
-                    #unknown_count = max(remaining_size-(batch_len//2), 0)
-                    #unknown_count = int(remaining_size//2)
                     unknown_count = batch_len - count_real_neg
 
 
