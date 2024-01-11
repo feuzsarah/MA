@@ -175,6 +175,10 @@ def train(model, data_loader, optimizer, loss_fn, trackers, cfg, cfg_ns, waiting
         loss_fn: Loss function
         trackers: Dictionary of trackers
         cfg: General configuration structure
+        cfg_ns: configuration of negative samples
+        waiting: waiting epochs (True/False)
+        current_epoch: current epoch
+        nr_neg: counter
     """
 
     # Reset dictionary of training metrics
