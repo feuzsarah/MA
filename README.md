@@ -1,4 +1,6 @@
-# Master Thesis
+# Master Thesis Experiments Code
+
+This is the code for conducting the experiments in my master's thesis.
 
 # The Base Code
 Our implementation is based on the code provided and developed by
@@ -19,3 +21,4 @@ The train command must be adapted to include the current version of the neg_samp
 <pre>
 python openset_imagenet/script/train.py config/threshold.yaml config/neg_samples.yaml 2 -g
 </pre>
+
